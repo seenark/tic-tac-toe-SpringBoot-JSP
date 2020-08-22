@@ -33,7 +33,7 @@
         
         <div class="container mt-4" >
             <h1 class="text-center">Tic-Tac-Toe: HadesGod</h1>
-            <form class="row mb-4 mt-5"  method="POST" action="http://localhost:8080/setTable">
+            <form class="row mb-4 mt-5"  method="POST" action="https://murmuring-thicket-72450.herokuapp.com/setTable">
                 <div class="input-group ">
                     <span class="input-group-text" id="addon-wrapping">Set Table Dimension</span>
                     <input type="number" class="form-control" name="dimension" value="${dimension}">
@@ -41,7 +41,7 @@
                     <button class="btn btn-danger">Reset</button>
                 </div>
             </form>
-            <form id="btnControl" class="row" method="POST" action="http://localhost:8080/click">
+            <form id="btnControl" class="row" method="POST" action="https://murmuring-thicket-72450.herokuapp.com/click">
                 <div class="game-table col-12 justify-content-center">
                     <c:forEach var="rows" items="${tableData}">
                         <c:forEach var="item" items="${rows}">
